@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <link rel="stylesheet preconnect prefetch" href="https://FlightCSS.foxglovedev.repl.co/host/flightcss/beta.css"/>
+    <link rel="stylesheet preconnect prefetch" href="/css/theme.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="nav">
+      <a onclick="window.location= '/'"><img class="brand" rel="preconnect prefetch" src="" style="padding: 5px;"></img></a>
+      <input class="search" id="searchbar" placeholder="Search"></input><button id="submit" style="display: none;" onclick="go()">submit</button>
+
+      <!-- add html pages on buttons -->
+
+      <div class="nav-item">
+         <a href="#">Home</a>
+      </div>
+      <div class="nav-item">
+         <a href="#">Download</a>
+      </div>
+
+      <div style="position: absolute; right: 20px;" class="nav-item">
+
+        <div class="nav-item" style="margin-right: 10px;">
+          <a href="signin">Sign In</a>
+        </div>
+        <div class="nav-item" style="margin-left: 10px;">
+          <a href="signup">Sign Up</a>
+        </div>
+
+      </div>
+      
+    </nav>
+    <div class="main">
+      <div class="intro">
+          <h1 class="glow">Oops</h1>
+          <p class="glow" id="random message">Sorry, we couldn't find what you were looking for.</p>
+          <br>
+          <button class="button-primary" onclick="window.location = '/'" style="width: 100px;">Go home :(</button>
+          
+      </div>
+    </div>
+  </body>
+
+</html>
