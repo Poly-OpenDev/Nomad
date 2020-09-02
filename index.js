@@ -1,4 +1,15 @@
-// To Squid, wanna help? WYLD#7185
+// where did all everyone's motivation go -WYLD
+
+// commit daily to nightly
+// commit weekly to weekly
+// commit monthly to monthly
+// commit yearly to yearly
+//
+// date start 30th August 2020
+//
+// hey guys - codeteacher is starting a team at 
+// https://coders.flarum.cloud/
+// feel free to join.
 
 
 require("sqreen")
