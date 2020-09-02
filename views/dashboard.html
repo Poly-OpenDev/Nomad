@@ -4,19 +4,46 @@
   <head>
     <link rel="stylesheet preconnect prefetch" href="https://FlightCSS.foxglovedev.repl.co/host/flightcss/beta.css"/>
     <link rel="stylesheet preconnect prefetch" href="/css/theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
+  <style>
+    .main{
+      padding-left: 60px;
+    }
 
+ ::-webkit-scrollbar {
+background: rgba(0, 0, 0, 0); !important
+width: 8px;
+}
+::-webkit-scrollbar-track {
+background: rgba(0, 0, 0, 0); !important
+padding:2px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgba(255, 25, 121, 1); !important
+	border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #DD2B75;
+}
+
+  
+  </style>
   <body onload="loaded()">
 
     <style>
     #loadingProgressG{
       width:100%;
+      z-index: 100;
       height:4px;
       position: fixed;
       top:0;
       left:0;
       overflow:hidden;
-      background-color:var(--page-color);
+      background-color:rgba(0,0,0,0);
       margin:auto;
       border-radius:2px;
         -o-border-radius:2px;
@@ -56,43 +83,16 @@
     <div id="loadingProgressG" id="loader">
       <div id="loadingProgressG_1" class="loadingProgressG"></div>
     </div>
-    <nav class="nav">
-          <a onclick="window.location= '/'"><img class="brand" rel="preconnect prefetch" src="" style="padding: 5px;"></img></a>
-
-          <!-- add html pages on buttons -->
-
-          <div class="nav-item">
-            <a href="download">Download</a>
-          </div>
-          <div style="position: absolute; right: 20px; display: inline-block;">
-            <div class="nav-item" style="margin-left: 10px;">
-              <a href="#" id="displayname"></a>
-            </div>
-          </div>
-          <div style="position: absolute; right: 20px; display: inline-block;">
-            <div class="nav-item" id="login" style="margin-left: 10px;">
-              <script authed="window.location= '/dashboard'" src="js/auth.js" async></script> <!-- window.location = '/dashboard' -->
-            </div>
-          </div>
-          
+    <nav class="side-nav" style="box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);">
+      <center>
+        <div class="tooltip">
+          <img src="images/default.png" class="avatar" style="width: calc(100% - 10px);"></img>
+          <span class="tooltiptext" id="displayname"><%= username %></span>
+        </div>
+      </center>
     </nav>
+    <div class="main">
+    </div>
   </body>
-  <script>
-      function loaded(){
-        document.getElementById("loader").style.display = "none";
-      }
-      // a beautiful script to show your name, with some nice headers too ;D
-
-      var req = new XMLHttpRequest();
-      req.open('GET', document.location, false);
-      req.send(null);
-      var header = req.getResponseHeader("x-username");
-
-      document.getElementById("displayname").innerHTML = header;
-      if(header != null){
-        document.getElementById("login").style.display = "none";
-      }
-
-    </script>
     <script src="js/main.js"></script>
 </html>

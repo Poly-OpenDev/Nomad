@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-  --primary: #9121ff ;
+  --primary: rgb(97,33,255) ;
   --secondary: #222;
   --page-color: #171717;
   --font: 'Montserrat', sans-serif;

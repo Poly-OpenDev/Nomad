@@ -31,7 +31,7 @@ button.onclick = function() {
     }
 
     window.removeEventListener('message', authComplete);
-
+//subscribe to OneLight Entertainment
     authWindow.close();
     if (selem.attributes.authed.value) {
       eval(selem.attributes.authed.value);
