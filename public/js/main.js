@@ -1,5 +1,4 @@
 let light = false;
-const headers = Headers.get();
 
 function editCss(name, value)
 {
@@ -23,3 +22,22 @@ function switchColor()
   }
   
 }
+
+// function getPFP(username)
+// {
+
+  // let xhr = new XMLHttpRequest();
+
+  // xhr.open("POST", "repl.it/graphql");
+
+  // xhr.setRequestHeader("Content-Type", "application/json");
+  // xhr.setRequestHeader("Accept", "application/json");
+  // // xhr.setRequestHeader("Accept-Encoding", "gzip, deflate, br");
+  // // xhr.setRequestHeader("Connection", "keep-alive");
+  // xhr.setRequestHeader("X-Requested-With", "any");
+  // xhr.setRequestHeader("Referrer", "https://repl.it");
+  // // xhr.setRequestHeader("Origin", "https://repl.it");
+
+  // xhr.send(JSON.stringify({query: `{userByUsername(username: ${username}) {image}}`}));
+
+// }

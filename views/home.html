@@ -23,8 +23,8 @@
         </div>
       </div>
       <div style="position: absolute; right: 20px; display: inline-block;">
-        <div class="nav-item" id="login" style="margin-left: 10px;">
-          <script authed="" src="js/auth.js" async></script> <!-- window.location = '/dashboard' -->
+        <div class="nav-item" id="login" style="cursor: pointer; margin-left: 10px;">
+          <script authed="window.location= '/dashboard'" src="js/auth.js" async></script> <!-- window.location = '/dashboard' -->
         </div>
       </div>
       
@@ -35,24 +35,7 @@
           <h1 class="glow">Nomad Chat</h1>
           <p class="glow">Bringing a simple to use chat service to users.</p>
 
-          <script>
-
-            // a beautiful script to show your name, with some nice headers too ;D
-
-            var req = new XMLHttpRequest();
-            req.open('GET', document.location, false);
-            req.send(null);
-            var header = req.getResponseHeader("x-username");
-            console.log(header);
-
-            document.getElementById("displayname").innerHTML = header;
-            if(header != null){
-              document.getElementById("login").style.display = "none";
-            }
-
-          </script>
-
-          <button onclick="join()" class="button-primary" style="width: 100px;">Join Us!</button>
+          <button onclick="join()" class="button-primary" style="cursor: pointer; width: 100px;">Join Us!</button>
 
           <br></br>
           
@@ -74,5 +57,22 @@
   <p><font size="2">The server was built with the help of the Foxglove development team in which are directly associated with the Poly OpenDev organization - meaning that any use of this service that is (and not limited to) violation of our policy is strictly prohibited and you may be profile banned or thereby reported.</font></p>
     </div>
   </body>
+
+  <script>
+
+      // a beautiful script to show your name, with some nice headers too ;D
+
+      var req = new XMLHttpRequest();
+      req.open('GET', document.location, false);
+      req.send(null);
+      var header = req.getResponseHeader("x-username");
+
+      document.getElementById("displayname").innerHTML = header;
+      if(header != null){
+        document.getElementById("login").style.display = "none";
+      }
+
+    </script>
+    <script src="js/main.js"></script>
 
 </html>

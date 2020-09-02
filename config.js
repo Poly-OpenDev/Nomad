@@ -3,5 +3,5 @@ module.exports = {
 	port: 8080,
 
 	// Pages to process for the frontend
-	pages: ['home','signup','login','download', 'app'],
+	pages: ['home','dashboard','download'],
 }
