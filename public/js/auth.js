@@ -2,8 +2,8 @@ var selem = document.currentScript;
 
 var button = document.createElement('button');
 button.className = "button-primary";
-button.textContent = 'Login With Replit';
-
+button.textContent = 'Login With Repl.it';
+button.style.cursor = 'pointer'; //make it look like an actual button by adding a pointer
 if (location.protocol !== 'https:') {
   var err = document.createElement('div');
   err.className = "replit-auth-error";

@@ -10,7 +10,9 @@
   --primary-text-color: #fff;
   --main-text-color: #ddd;
 }
-
+primary-button{
+  cursor: pointer;
+}
 /* end config */
 
 nav{
@@ -43,3 +45,21 @@ color: #222 !important;
 input:-ms-input-placeholder {  
 color: #222 !important;  
 }
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--page-color) !important;
+  border-radius: 4px;
+  color: white;
+  padding: 12px 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100000000000;
+}
+
