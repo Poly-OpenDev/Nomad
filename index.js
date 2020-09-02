@@ -1,4 +1,5 @@
-// where did all everyone's motivation go -WYLD
+// I need everybody to go to Version control and switch to 
+// nightly - do not edit ANYTHING until you go there.
 
 // commit daily to nightly
 // commit weekly to weekly
@@ -10,6 +11,7 @@
 // hey guys - codeteacher is starting a team at 
 // https://coders.flarum.cloud/
 // feel free to join.
+
 
 
 require("sqreen")
