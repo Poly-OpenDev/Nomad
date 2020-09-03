@@ -1,5 +1,6 @@
 // I need everybody to go to Version control and switch to 
-// nightly - do not edit ANYTHING until you go there.
+// nightly-(developer-edition) - do not edit ANYTHING until you go there.
+// if someone creates a new branch - you will need to switch.
 
 // commit daily to nightly
 // commit weekly to weekly
