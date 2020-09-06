@@ -18,9 +18,9 @@
 			<% if(locals.username) { %>
 				<div class="nav-item" style="margin-left: 10px;">
 					<div class="dropdown">
-          <a href="#" id="displayname"><%= username %></a>
+          <a href="#" id="displayname" onclick="toggle_username_area()"><%= username %></a>
           <!-- add dropdown here-->
-            <div class="dropdown-content">
+            <div class="dropdown-content" id=>
   				<a href="/logout">Logout</a>
           <br>
           <a href="/dashboard">Dashboard</a>
@@ -57,7 +57,11 @@
   		<p><font size="2">The server was built with the help of the Foxglove development team in which are directly associated with the Poly OpenDev organization - meaning that any use of this service that is (and not limited to) violation of our policy is strictly prohibited and you may be profile banned or thereby reported.</font></p>
     </div>
     <script src="js/main.js"></script>
-
+    <script>
+      function toggle_username_area() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      </script>
 </body>
 </html>
 

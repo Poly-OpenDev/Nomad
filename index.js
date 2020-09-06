@@ -15,7 +15,8 @@
 // hey guys - codeteacher is starting a team at 
 // https://coders.flarum.cloud/
 // feel free to join.
- 
+
+
 
 const config = require('./config.js');
 const path = require("path");
@@ -25,7 +26,6 @@ const express = require("express");
 const app = express();
 
 const rateLimit = require("express-rate-limit");
-const exphbs  = require('express-handlebars');
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 require("sqreen")
@@ -35,15 +35,13 @@ const filter = new bad();
 // var hbs = exphbs.create({});
 
 app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html')
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'html');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(express.static("node_modules"));
-
-app.enable('view cache');
 
 app.enable("trust proxy");
 
