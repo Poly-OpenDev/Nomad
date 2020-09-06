@@ -18,7 +18,7 @@
 			<% if(locals.username) { %>
 				<div class="nav-item" style="margin-left: 10px;">
 					<div class="dropdown">
-          <a href="#" id="displayname" onclick="toggle_username_area()"><%= username %></a>
+          <a id="displayname" onclick="toggle_username_area()"><%= username %></a>
           <!-- add dropdown here-->
             <div class="dropdown-content" id=>
   				<a href="/logout">Logout</a>
@@ -59,7 +59,7 @@
     <script src="js/main.js"></script>
     <script>
       function toggle_username_area() {
-        document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById("dropdown-content").classList.toggle("show");
       }
       </script>
 </body>
