@@ -6,7 +6,7 @@
 ##### version 0.00.003-Nightly
  - gathering research for avatars - https://repl.it/talk/ask/Getting-user-pfp-from-repl-auth/51580
  - login partially works
-
+<!-- 
 ## Idiot alert
 Who ever keeps deleting the code - Stop trying
 because i can restore this stuff at the click of a
@@ -34,4 +34,4 @@ hehe - dillonjoshua68
 
 
 IM HAVING MY MOCK EXAMS ON NOVEMBER, SO IM STUDYING - dillonjoshua68
-ok. thanks for letting me know. - lethdev2019
+ok. thanks for letting me know. - lethdev2019 -->
