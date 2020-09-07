@@ -1,5 +1,8 @@
 # **Nomad**
 ## News
+##### version 0.00.004-Nightly
+ - loader upon log in / log out or page load now - test it out!
+
 ##### version 0.00.003-Nightly
  - gathering research for avatars - https://repl.it/talk/ask/Getting-user-pfp-from-repl-auth/51580
  - login partially works
@@ -13,9 +16,9 @@ People on my suspect list are:
   - DannyIsCoding 
   - LTI2
   - WilkeWyoming 
-  - dillonjoshua68 (Due to inactivity when i am on)
+  - ~~dillonjoshua68 (Due to inactivity when i am on)
   hehe im offline most of the time due to school sry - dillonjoshua68 - im offline almost always.
-  the last project i did was my weather API
+  the last project i did was my weather API~~
   
   - nonamebyprogram (Can't be too sure.)-
 

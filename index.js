@@ -78,7 +78,6 @@ app.get('/', (req, res) => {
 
 app.all('/logout', (req, res) => {
 	res.set('Clear-Site-Data', `"cache", "cookies", "storage", "executionContexts"`);
-
 	res.redirect('/');
 })
 

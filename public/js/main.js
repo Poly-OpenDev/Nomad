@@ -41,3 +41,17 @@ function switchColor()
   // xhr.send(JSON.stringify({query: `{userByUsername(username: ${username}) {image}}`}));
 
 // }
+onload = ()=>{
+loader=document.getElementById("loadingProgressG")
+loader.style.visibility = "hidden"
+}
+
+function logout(){
+  loader.style.visibility = "visible"
+  window.location = "/logout"
+}
+
+function login(){
+  loader.style.visibility = "visible"
+  window.location = "/app"
+}
