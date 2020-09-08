@@ -53,5 +53,5 @@ function logout(){
 
 function login(){
   loader.style.visibility = "visible"
-  window.location = "/app"
+  window.location = "/"
 }
